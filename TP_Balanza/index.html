@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+        <main>
+            <script type="text/javascript" src="functions.js">
+            </script>
+            <form name="FormBalanza">
+                <div>
+                    <div class="column left"></div>
+                    <div class="column middle">
+                        <p class="resaltado">Para calcular su índice de masa corporal, ingrese su estatura y peso. </p>
+                        <p class="Fontgris">Sistema métrico</p>
+                        <p class="resaltado">ESTATURA</p>
+                        <p class="Fontgris">En centrímetros</p>
+                        <p><input type="text" class="textbox" id="txtestatura">
+                            <label id="respuestaEstatura"></label></p> <! -- DEJO éste LABEL para mostrar eñ resultado desde JS -->
+                        <p class="resaltado">PESO</p>
+                        <p class="Fontgris">En kilogramos</p>
+                        <p><input type="text" class="textbox" id="txtpeso">
+                            <label id="respuestaPeso"></label></p> <! -- DEJO éste LABEL para mostrar eñ resultado desde JS --></p> 
+                        <! -- DEBO SACAR EL NAME o el ID del BUTTON, para que tome la función -->
+                        <p><input type="button" class="button"  value="Calcular" onClick="Calcular()"></p>
+
+                        <p class="Fontgris">Resultado    <input type="textbox" class="textboxResultado" id="resultado"></p>
+                            <table id="tablaResult" class="tableResultado">
+                                <tr id="rowh">
+                                    <th>Composición Corporal</th>
+                                    <th>Índice de masa corporal (IMC)</th>
+                                </tr>
+                                <tr id="row1">
+                                    <td>Peso Inferior al normal</td>
+                                    <td>Menos de 18.5</td>
+                                </tr>
+                                <tr id="row2">
+                                    <td>Normal</td>
+                                    <td>18.5 - 24.9</td>
+                                </tr>  
+                                <tr id="row3">
+                                    <td>Peso superior al normal</td>
+                                    <td>25.0 - 29.9</td>
+                                </tr>       
+                                <tr id="row4">
+                                    <td>Obesidad</td>
+                                    <td>Más de 30.0</td>
+                                </tr>                                                  
+                            </table>
+                    </div>
+                    <div class="column right"></div>
+                </div>
+            </form>
+        </main>
+</body>
+</html>

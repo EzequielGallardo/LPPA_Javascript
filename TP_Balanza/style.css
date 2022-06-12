@@ -1,0 +1,56 @@
+ 
+ /**************DIVIDO en 3 COLS***************/
+.column {
+    float: left;
+    padding: 10px;
+    height: 600px;  
+  }
+  .left, .right {
+    width: 10%;
+    background-color: rgb(214, 214, 214);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .middle {
+    width: 40%;
+    background-color: rgb(214, 214, 214);
+  }
+ 
+ /**************************************/
+  .resaltado
+  {
+      font-weight: bold;  /*negrita*/
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: smaller;
+  }
+  .Fontgris
+  {   color: rgb(172, 167, 167);}
+
+  .button{
+      background-color: blue;
+      width: 75px;
+      height: 30px;
+      border-color: blue;
+      color: aliceblue;
+  }
+  .textbox
+  {
+      height: 20px;
+      width: 40px;
+  }
+
+  .textboxResultado
+  {
+      height: 20px;
+      width: 300px;
+  }
+
+  .tableResultado{
+      background-color: white;
+      /*******CENTRAR LA TABLA*/
+      margin-left: auto;
+      margin-right: auto;
+      visibility: hidden;
+      /************************/
+  }
